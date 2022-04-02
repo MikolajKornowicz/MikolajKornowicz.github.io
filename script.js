@@ -69,7 +69,7 @@ $(document).ready(function() {
     var requestUrl = apiRoot + taskId;
 
     $.ajax({
-      url: requestUrl;,
+      url: requestUrl,
       method: 'DELETE',
       success: function() {
         parentEl.slideUp(400, function() { parentEl.remove(); });
